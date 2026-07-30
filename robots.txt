@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://tu-url-de-infinityfree.com/sitemap.xml
