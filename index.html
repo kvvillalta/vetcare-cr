@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -16,8 +16,8 @@
     <meta property="og:description"
         content="Cuidamos la salud y felicidad de tus mascotas con atención veterinaria profesional.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="img/logo/logo.png">
-    
+    <meta property="og:image" content="img/Logo/vetcare-logo3t.png">
+
     <!-- Canonical -->
 
     <link rel="canonical" href="https://tu-url.com/">
@@ -44,6 +44,9 @@
     <link rel="manifest" href="favicon/site.webmanifest">
 
 </head>
+<button id="btnSubir" aria-label="Volver arriba">
+    ↑
+</button>
 
 <body>
 
@@ -52,25 +55,22 @@
         <nav class="nav">
 
             <a class="logo" href="#inicio">
-                VetCare CR
+                <img src="img/Logo/vetcare-logo3t.png" alt="Logo VetCare CR">
+                <span>VetCare CR</span>
             </a>
-
-
             <ul class="menu">
-
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-
+                <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                <li><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li><a class="nav-link" href="#galeria">Galería</a></li>
+                <li><a class="nav-link" href="#contacto">Contacto</a></li>
             </ul>
 
         </nav>
 
 
 
-        <section class="hero" id="inicio">
+        <section id="inicio" class="hero">
 
             <section class="hero-contenido">
 
@@ -97,7 +97,7 @@
 
     <main>
 
-        <section class="nosotros" id="nosotros">
+        <section id="nosotros" class="nosotros animar">
 
             <section class="nosotros-contenido">
 
@@ -174,7 +174,7 @@
 
 
 
-        <section class="servicios" id="servicios">
+        <section id="servicios" class="servicios animar">
 
             <header>
                 <h2>
@@ -287,7 +287,7 @@
         </section>
 
 
-        <section class="beneficios">
+        <section id="beneficios" class="beneficios animar">
 
             <header>
 
@@ -356,7 +356,7 @@
 
 
         </section>
-        <section class="galeria" id="galeria">
+        <section id="galeria" class="galeria animar">
 
             <header>
 
@@ -449,127 +449,153 @@
             </section>
 
 
-        </section>
+            <!-- Carrusel debajo de la galería -->
+
+            <section class="slider-galeria">
+
+                <div class="galeria-movimiento">
+
+                    <img src="img/perro-gato-1.jpg" alt="Perro y gato">
+                    <img src="img/perro-gato-2.jpg" alt="Perro y gato">
+                    <img src="img/perro-gato-3.jpg" alt="Perro y gato">
+                    <img src="img/perro-gato-5.jpg" alt="Perro y gato">
+                    <img src="img/gatos-1.jpg" alt="Gatos">
+                    <img src="img/gato-2.jpg" alt="Gato">
+                    <img src="img/perro-veterinaria-3.jpg" alt="Consulta veterinaria">
+                    <img src="img/hamster-1.jpg" alt="Hámster">
 
 
+                    <!-- repetición para efecto infinito -->
 
-        <section class="contacto" id="contacto">
+                    <img src="img/perro-gato-1.jpg" alt="Perro y gato">
+                    <img src="img/perro-gato-2.jpg" alt="Perro y gato">
+                    <img src="img/perro-gato-3.jpg" alt="Perro y gato">
 
-            <header>
-
-                <h2>
-                    Contáctanos
-                </h2>
-
-                <p>
-                    Estamos listos para cuidar la salud
-                    y bienestar de tu mascota.
-                </p>
-
-            </header>
-
-
-
-            <section class="informacion-contacto">
-
-
-                <article class="dato-contacto">
-
-                    <h3>
-                        📍 Ubicación
-                    </h3>
-
-                    <p>
-                        Santa Cruz, Guanacaste, Costa Rica
-                    </p>
-
-                </article>
-
-
-
-                <article class="dato-contacto">
-
-                    <h3>
-                        📞 Teléfono
-                    </h3>
-
-                    <p>
-                        +506 0000-0000
-                    </p>
-
-                </article>
-
-
-
-                <article class="dato-contacto">
-
-                    <h3>
-                        ✉️ Correo
-                    </h3>
-
-                    <p>
-                        contacto@vetcarecr.com
-                    </p>
-
-                </article>
-
-
-
-                <article class="dato-contacto">
-
-                    <h3>
-                        🕒 Horario
-                    </h3>
-
-                    <p>
-                        Lunes a sábado: 8:00 a.m. - 6:00 p.m.
-                    </p>
-
-                </article>
-
+                </div>
 
             </section>
 
 
 
 
-            <form class="formulario-contacto">
+
+            <section id="contacto" class="contacto animar">
+
+                <header>
+
+                    <h2>
+                        Contáctanos
+                    </h2>
+
+                    <p>
+                        Estamos listos para cuidar la salud
+                        y bienestar de tu mascota.
+                    </p>
+
+                </header>
 
 
-                <label for="nombre">
-                    Nombre completo
-                </label>
 
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                <section class="informacion-contacto">
 
 
+                    <article class="dato-contacto">
 
-                <label for="correo">
-                    Correo electrónico
-                </label>
+                        <h3>
+                            📍 Ubicación
+                        </h3>
 
-                <input type="email" id="correo" name="correo" placeholder="Ingrese su correo">
+                        <p>
+                            Santa Cruz, Guanacaste, Costa Rica
+                        </p>
+
+                    </article>
 
 
 
-                <label for="mensaje">
-                    Mensaje
-                </label>
+                    <article class="dato-contacto">
 
-                <textarea id="mensaje" name="mensaje" placeholder="Escriba su consulta">
+                        <h3>
+                            📞 Teléfono
+                        </h3>
+
+                        <p>
+                            +506 0000-0000
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="dato-contacto">
+
+                        <h3>
+                            ✉️ Correo
+                        </h3>
+
+                        <p>
+                            contacto@vetcarecr.com
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="dato-contacto">
+
+                        <h3>
+                            🕒 Horario
+                        </h3>
+
+                        <p>
+                            Lunes a sábado: 8:00 a.m. - 6:00 p.m.
+                        </p>
+
+                    </article>
+
+
+                </section>
+
+
+
+
+                <form class="formulario-contacto">
+
+
+                    <label for="nombre">
+                        Nombre completo
+                    </label>
+
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+
+
+
+                    <label for="correo">
+                        Correo electrónico
+                    </label>
+
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo">
+
+
+
+                    <label for="mensaje">
+                        Mensaje
+                    </label>
+
+                    <textarea id="mensaje" name="mensaje" placeholder="Escriba su consulta">
         </textarea>
 
 
 
-                <button type="submit">
-                    Enviar mensaje
-                </button>
+                    <button type="submit">
+                        Enviar mensaje
+                    </button>
 
 
-            </form>
+                </form>
 
 
-        </section>
+            </section>
 
     </main>
 
@@ -579,6 +605,8 @@
 
 
         <section>
+
+            <img class="footer-logo" src="img/Logo/vetcare-logo2.png" alt="Logo VetCare CR">
 
             <h3>
                 VetCare CR
